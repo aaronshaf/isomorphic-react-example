@@ -1,7 +1,6 @@
 require('6to5/register')({
   experimental: true
 })
-require("6to5/polyfill")
 
 var PORT = process.env.PORT || 3000
 
