@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+  <title><%= data.title || 'ok panda' %></title>
+  <meta charSet="utf-8" />
+  <link rel="stylesheet" href="/assets/main.css" type="text/css" />
+</head>
+<body>
+  <div id="application" className="ok-layout"><%- applicationHtml %></div>
+<script>
+initialProps = <%- JSON.stringify(data,null,2) %>
+</script>
+<script src="/assets/main.js" async></script>
+</body>
+</html>

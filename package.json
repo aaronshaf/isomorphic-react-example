@@ -1,0 +1,34 @@
+{
+  "name": "isomorphic-react-example",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node-dev index.js",
+    "build": "node_modules/.bin/browserify client/main.js -t [6to5ify --experimental --runtime] > assets/main.js",
+    "watch": "watchify client/main.js -t [6to5ify --experimental --runtime] -o assets/main.js -dv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaronshaf/isomorphic-react-example.git"
+  },
+  "author": "Aaron Shafovaloff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aaronshaf/isomorphic-react-example/issues"
+  },
+  "homepage": "https://github.com/aaronshaf/isomorphic-react-example",
+  "dependencies": {
+    "6to5": "2.13.3",
+    "6to5ify": "1.4.0",
+    "axios": "^0.5.0",
+    "browserify": "7.0.0",
+    "ejs": "^2.2.3",
+    "es6-promise": "^2.0.1",
+    "express": "^4.11.1",
+    "lodash-node": "^2.4.1",
+    "react": "^0.12.2",
+    "react-router": "^0.11.6",
+    "regenerator": "0.8.9"
+  }
+}

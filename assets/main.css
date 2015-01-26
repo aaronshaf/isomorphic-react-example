@@ -1,0 +1,9 @@
+.panda-small {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.panda-large {
+  max-width: 400px;
+  max-height: 400px;
+}
